@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  status: 1
+  name: MyString
+  amount: 1
+  user_id: 1
+  approver_id: 1
+
+two:
+  status: 1
+  name: MyString
+  amount: 1
+  user_id: 1
+  approver_id: 1

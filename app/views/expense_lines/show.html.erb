@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Date:</b>
+  <%= @expense_line.date %>
+</p>
+
+<p>
+  <b>Merchant:</b>
+  <%= @expense_line.merchant %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @expense_line.amount %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @expense_line.category_id %>
+</p>
+
+<p>
+  <b>Tags:</b>
+  <%= @expense_line.tags %>
+</p>
+
+<p>
+  <b>Comment:</b>
+  <%= @expense_line.comment %>
+</p>
+
+<p>
+  <b>Receipt:</b>
+  <%= @expense_line.receipt_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_expense_line_path(@expense_line) %> |
+<%= link_to 'Back', expense_lines_path %>

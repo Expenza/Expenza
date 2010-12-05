@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Status:</b>
+  <%= @expense_report.status %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @expense_report.name %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @expense_report.amount %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @expense_report.user_id %>
+</p>
+
+<p>
+  <b>Approver:</b>
+  <%= @expense_report.approver_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_expense_report_path(@expense_report) %> |
+<%= link_to 'Back', expense_reports_path %>

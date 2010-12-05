@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  content_category: 1
+  contents: 
+  date: 2010-12-03 19:31:31
+  amount: 1
+  comments: MyString
+
+two:
+  user_id: 1
+  content_category: 1
+  contents: 
+  date: 2010-12-03 19:31:31
+  amount: 1
+  comments: MyString

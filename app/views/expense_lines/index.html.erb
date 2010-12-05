@@ -1,0 +1,35 @@
+<h1>Listing expense_lines</h1>
+
+<table>
+  <tr>
+    <th>Date</th>
+    <th>Merchant</th>
+    <th>Amount</th>
+    <th>Category</th>
+    <th>Tags</th>
+    <th>Comment</th>
+    <th>Receipt</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @expense_lines.each do |expense_line| %>
+  <tr>
+    <td><%= expense_line.date %></td>
+    <td><%= expense_line.merchant %></td>
+    <td><%= expense_line.amount %></td>
+    <td><%= expense_line.category_id %></td>
+    <td><%= expense_line.tags %></td>
+    <td><%= expense_line.comment %></td>
+    <td><%= expense_line.receipt_id %></td>
+    <td><%= link_to 'Show', expense_line %></td>
+    <td><%= link_to 'Edit', edit_expense_line_path(expense_line) %></td>
+    <td><%= link_to 'Destroy', expense_line, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Expense line', new_expense_line_path %>

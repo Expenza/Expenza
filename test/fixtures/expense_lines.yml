@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  date: 2010-12-03 19:16:17
+  merchant: MyString
+  amount: 1
+  category_id: 1
+  tags: MyString
+  comment: MyString
+  receipt_id: 1
+
+two:
+  date: 2010-12-03 19:16:17
+  merchant: MyString
+  amount: 1
+  category_id: 1
+  tags: MyString
+  comment: MyString
+  receipt_id: 1

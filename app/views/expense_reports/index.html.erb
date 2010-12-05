@@ -1,0 +1,31 @@
+<h1>Listing expense_reports</h1>
+
+<table>
+  <tr>
+    <th>Status</th>
+    <th>Name</th>
+    <th>Amount</th>
+    <th>User</th>
+    <th>Approver</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @expense_reports.each do |expense_report| %>
+  <tr>
+    <td><%= expense_report.status %></td>
+    <td><%= expense_report.name %></td>
+    <td><%= expense_report.amount %></td>
+    <td><%= expense_report.user_id %></td>
+    <td><%= expense_report.approver_id %></td>
+    <td><%= link_to 'Show', expense_report %></td>
+    <td><%= link_to 'Edit', edit_expense_report_path(expense_report) %></td>
+    <td><%= link_to 'Destroy', expense_report, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Expense report', new_expense_report_path %>
