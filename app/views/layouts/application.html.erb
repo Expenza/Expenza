@@ -15,7 +15,8 @@
           Signed in as <%= current_user.email %>. Not You?
           <%= link_to "Sign Out", destroy_user_session_path %>
       <% else %>
-          <%= link_to "Sign Up", new_user_registration_path %> or <%= link_to "Sign In", new_user_session_path %>  or <%=link_to_rpx "Sign In Using Other Accounts", user_session_url %><br/>
+          <%= link_to "Sign Up", new_user_registration_path %> or <%= link_to "Sign In", new_user_session_path %>
+         Or Use <%= link_to 'GMail', user_omniauth_authorize_path(:google_apps) %> to Login.
           <!--%= embed_rpx user_session_url %-->
       <% end %>
     <!--/div -->
@@ -28,6 +29,5 @@
 
 <%= yield %>
 </div>
-<%= javascript_include_rpx(user_session_url) %>
 </body>
 </html>

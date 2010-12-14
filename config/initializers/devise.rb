@@ -1,3 +1,4 @@
+require 'openid/store/filesystem'
 # Use this hook to configure devise mailer, warden hooks and so forth. The first
 # four configuration values can also be set straight in your models.
 Devise.setup do |config|
@@ -139,6 +140,8 @@ Devise.setup do |config|
   #   end
   #   manager.default_strategies(:scope => :user).unshift :twitter_oauth
   # end
-config.rpx_application_name = "expenza"
-  RPXNow.api_key = "647d432c1c1f9bcd2f182dc778c86e89d510ac6a"
+#config.rpx_application_name = "expenza"
+ # RPXNow.api_key = "647d432c1c1f9bcd2f182dc778c86e89d510ac6a"
+
+  config.omniauth :google_apps, OpenID::Store::Filesystem.new('/tmp'), :domain => 'gmail.com'
 end
