@@ -7,7 +7,7 @@ gem  'devise','1.2.rc'
 gem 'jquery-rails'
 gem 'omniauth'
 gem "oa-oauth", :require => "omniauth/oauth"
-gem 'devise_invitable'
+#gem 'devise_invitable'
 #gem 'devise_rpx_connectable'
 #gem 'flutie'
 #gem 'paperclip'

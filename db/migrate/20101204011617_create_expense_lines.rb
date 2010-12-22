@@ -4,10 +4,11 @@ class CreateExpenseLines < ActiveRecord::Migration
       t.datetime :date
       t.string :merchant
       t.integer :amount
-      t.integer :category_id
       t.string :tags
       t.string :comment
-      t.integer :receipt_id
+      t.integer :category_id
+      t.integer :expense_report_id
+      t.integer :user_id
 
       t.timestamps
     end

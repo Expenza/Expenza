@@ -162,12 +162,6 @@
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="devise_invitable" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
-      </requirement>
-      <source from="Gemfile" />
-    </requirement>
-    <requirement>
-      <requirement>
         <dependency name="devise_rpx_connectable" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source manual="true" />

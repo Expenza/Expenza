@@ -6,7 +6,8 @@ class CreateReceipts < ActiveRecord::Migration
       t.binary :contents
       t.datetime :date
       t.integer :amount
-      t.string :comments
+      t.string :tags
+      t.string :comment
 
       t.timestamps
     end

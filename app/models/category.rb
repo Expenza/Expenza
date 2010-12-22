@@ -1,3 +1,3 @@
 class Category < ActiveRecord::Base
-  belongs_to :expense_line
+  has_many :expense_lines
 end

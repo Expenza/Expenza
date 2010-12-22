@@ -4,8 +4,8 @@ class CreateExpenseReports < ActiveRecord::Migration
       t.integer :status
       t.string :name
       t.integer :amount
-      t.integer :user_id
-      t.integer :approver_id
+      t.string :tags
+      t.string :comment
 
       t.timestamps
     end

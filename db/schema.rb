@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101204035721) do
+ActiveRecord::Schema.define(:version => 20101222001407) do
 
   create_table "categories", :force => true do |t|
     t.string   "category_code"
@@ -26,26 +26,42 @@ ActiveRecord::Schema.define(:version => 20101204035721) do
     t.datetime "updated_at"
   end
 
+  create_table "companies_users", :id => false, :force => true do |t|
+    t.integer "company_id"
+    t.integer "user_id"
+  end
+
   create_table "expense_lines", :force => true do |t|
     t.datetime "date"
     t.string   "merchant"
     t.integer  "amount"
-    t.integer  "category_id"
     t.string   "tags"
     t.string   "comment"
-    t.integer  "receipt_id"
+    t.integer  "category_id"
+    t.integer  "expense_report_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "expense_lines_receipts", :id => false, :force => true do |t|
+    t.integer "expense_line_id"
+    t.integer "receipt_id"
   end
 
   create_table "expense_reports", :force => true do |t|
     t.integer  "status"
     t.string   "name"
     t.integer  "amount"
-    t.integer  "user_id"
-    t.integer  "approver_id"
+    t.string   "tags"
+    t.string   "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "expense_reports_users", :id => false, :force => true do |t|
+    t.integer "expense_report_id"
+    t.integer "user_id"
   end
 
   create_table "receipts", :force => true do |t|
@@ -54,15 +70,26 @@ ActiveRecord::Schema.define(:version => 20101204035721) do
     t.binary   "contents"
     t.datetime "date"
     t.integer  "amount"
-    t.string   "comments"
+    t.string   "tags"
+    t.string   "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "roles", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "roles_users", :id => false, :force => true do |t|
+    t.integer "role_id"
+    t.integer "user_id"
   end
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false
     t.string   "encrypted_password",   :limit => 128, :default => "", :null => false
-    t.string   "password_salt",                       :default => "", :null => false
     t.string   "reset_password_token"
     t.string   "remember_token"
     t.datetime "remember_created_at"
