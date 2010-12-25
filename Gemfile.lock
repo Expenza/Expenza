@@ -32,6 +32,7 @@ GEM
     arel (2.0.4)
     bcrypt-ruby (2.1.2)
     builder (2.1.2)
+    cancan (1.4.1)
     devise (1.2.rc)
       bcrypt-ruby (~> 2.1.2)
       orm_adapter (~> 0.0.2)
@@ -131,6 +132,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  cancan
   devise (= 1.2.rc)
   jquery-rails
   oa-oauth

@@ -3,6 +3,7 @@ class CreateCategories < ActiveRecord::Migration
     create_table :categories do |t|
       t.string :category_code
       t.string :category_description
+      t.integer :company_id
 
       t.timestamps
     end

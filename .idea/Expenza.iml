@@ -132,6 +132,12 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="cancan" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="configuration" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source manual="true" />
@@ -701,7 +707,7 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] xml-simple (v1.0.12, /usr/local/lib/ruby/gems/1.9.1/gems/xml-simple-1.0.12)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] devise (v1.2.rc, /home/gaurav/.gem/ruby/1.9.1/gems/devise-1.2.rc)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] orm_adapter (v0.0.3, /home/gaurav/.gem/ruby/1.9.1/gems/orm_adapter-0.0.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] devise_invitable (v0.3.5, /usr/local/lib/ruby/gems/1.9.1/gems/devise_invitable-0.3.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] cancan (v1.4.1, /usr/local/lib/ruby/gems/1.9.1/gems/cancan-1.4.1)" level="application" />
   </component>
 </module>
 
