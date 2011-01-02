@@ -11,7 +11,16 @@ class Ability
       can :manage, [Company] do |company|
         # checking that the company is not nil and the user is found. if not, then return false
         #TODO: thjink about the case where multiple company_admins exist for the company.
-        !(company.nil?) && !(company.users.find(:first, :conditions => ['id =?', user.id]).nil?)
+        if company.nil?
+          return false
+        elsif company.users.find(:all).empty? #No user yet exists for the company
+          return true
+        elsif !(company.users.find(:first, :conditions => ['id =?', user.id]).nil?)
+          return true
+        else
+          return false
+        end
+        # !(company.nil?) && !(company.users.find(:first, :conditions => ['id =?', user.id]).nil?)
       end
       can :manage, [Category] do |category|
         # checking that the category is not nil and the user is found. if not, then return false

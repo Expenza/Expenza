@@ -8,6 +8,7 @@ gem 'jquery-rails'
 gem 'omniauth'
 gem "oa-oauth", :require => "omniauth/oauth"
 gem "cancan"
+
 #gem 'devise_invitable'
 #gem 'devise_rpx_connectable'
 #gem 'flutie'
@@ -15,7 +16,7 @@ gem "cancan"
 #gem 'mongo'
 #gem 'mongo_mapper'
 #gem 'bson_ext'
-#gem 'aws-s3'
+gem 'aws-s3'
 #gem 'right_aws','2.0.0.1'
 #gem 'formtastic', '~> 1.1.0'
 

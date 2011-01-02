@@ -30,6 +30,10 @@ GEM
     activesupport (3.0.3)
     addressable (2.2.2)
     arel (2.0.4)
+    aws-s3 (0.6.2)
+      builder
+      mime-types
+      xml-simple
     bcrypt-ruby (2.1.2)
     builder (2.1.2)
     cancan (1.4.1)
@@ -90,7 +94,7 @@ GEM
       oa-oauth (= 0.1.6)
       oa-openid (= 0.1.6)
     orm_adapter (0.0.3)
-    pg (0.9.0)
+    pg (0.10.0)
     polyglot (0.3.1)
     pyu-ruby-sasl (0.0.3.2)
     rack (1.2.1)
@@ -127,11 +131,13 @@ GEM
     tzinfo (0.3.23)
     warden (1.0.2)
       rack (>= 1.0.0)
+    xml-simple (1.0.12)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  aws-s3
   cancan
   devise (= 1.2.rc)
   jquery-rails
