@@ -10,16 +10,12 @@ class Ability
     elsif user.role? :company_admin
       can :manage, [Company] do |company|
         # checking that the company is not nil and the user is found. if not, then return false
-        #TODO: thjink about the case where multiple company_admins exist for the company.
-        if company.nil?
-          return false
-        elsif company.users.find(:all).empty? #No user yet exists for the company
-          return true
-        elsif !(company.users.find(:first, :conditions => ['id =?', user.id]).nil?)
-          return true
-        else
-          return false
+        #TODO: think about the case where multiple company_admins exist for the company.
+        flag = false
+        if company.users.find(:all).empty? || !(company.users.find(:first, :conditions => ['id =?', user.id]).nil?) #No user yet exists for the company
+          flag = true
         end
+        flag
         # !(company.nil?) && !(company.users.find(:first, :conditions => ['id =?', user.id]).nil?)
       end
       can :manage, [Category] do |category|
@@ -79,6 +75,9 @@ class Ability
       end
     elsif user.role? :user
       can :read, [Category]
+      can :read, [Company] do |co|
+        !(co.users.find(:first, :conditions => ['id =?', user.id]).nil?)
+      end
       can :manage, [ExpenseLine] do |el|
         el.try(:user) == user
       end
