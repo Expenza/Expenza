@@ -10,6 +10,7 @@ Expenza::Application.routes.draw do
   resources :expense_lines
 
   resources :companies
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

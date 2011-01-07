@@ -38,8 +38,8 @@ class Ability
       can :manage, [Receipt] do |rec|
         flag = false
         user.companies.each do |co|
-          if !(rec.user.companies.find(:first, :conditions => ['id = ?', co.id]).nil?)
-            flag = true
+          if !rec.nil? || !(rec.user.companies.find(:first, :conditions => ['id = ?', co.id]).nil?)
+            flag = true 
           end
         end
         (rec.try(:user) == user) || flag
@@ -82,11 +82,12 @@ class Ability
         el.try(:user) == user
       end
       can :manage, [ExpenseReport] do |er|
-        er.try(:user) == user
+        !(er.users.find(:first, :conditions => ['id =?', user.id]).nil?) || (er.users.empty?)
       end
       can :manage, [Receipt] do |rec|
          rec.try(:user) == user
       end
+      can :read, User, :user_id => user.id
     #elsif user.role? :auditor   TODO
       end
     end

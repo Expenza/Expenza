@@ -2,6 +2,8 @@ class ReceiptsController < ApplicationController
   # GET /receipts
   # GET /receipts.xml
   before_filter :authenticate_user!
+  load_and_authorize_resource #for cancan
+
   def index
     @receipts = Receipt.find_all_by_user_id current_user.id
 
@@ -25,8 +27,7 @@ class ReceiptsController < ApplicationController
   # GET /receipts/new
   # GET /receipts/new.xml
   def new
-    @receipt = Receipt.new
-    @receipt.user_id = current_user.id
+    @receipt = Receipt.new(:user_id => current_user.id)
 
     respond_to do |format|
       format.html # new.html.erb
@@ -43,7 +44,6 @@ class ReceiptsController < ApplicationController
   # POST /receipts.xml
   def create
     @receipt = Receipt.new(params[:receipt])
-    @receipt.user_id = current_user.id
 
     respond_to do |format|
       if @receipt.save

@@ -2,14 +2,11 @@ class CompaniesController < ApplicationController
   # GET /companies
   # GET /companies.xml
   before_filter :authenticate_user!
-  def index
-    #if current_user.role? :admin
-      @companies = Company.all
-    #else
-     # @companies = User.find_by_id(current_user.id).companies
-    #end
+  load_and_authorize_resource #for cancan
 
-    respond_to do |format|
+  def index
+      @companies = Company.all
+      respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @companies }
     end

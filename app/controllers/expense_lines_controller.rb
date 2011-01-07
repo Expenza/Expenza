@@ -2,6 +2,8 @@ class ExpenseLinesController < ApplicationController
   # GET /expense_lines
   # GET /expense_lines.xml
   before_filter :authenticate_user!
+  load_and_authorize_resource #for cancan
+
   def index
     @expense_lines = ExpenseLine.all
 

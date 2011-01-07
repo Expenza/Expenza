@@ -2,6 +2,8 @@ class ExpenseReportsController < ApplicationController
   # GET /expense_reports
   # GET /expense_reports.xml
   before_filter :authenticate_user!
+  load_and_authorize_resource #for cancan
+
   def index
     @expense_reports = ExpenseReport.all
 

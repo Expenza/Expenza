@@ -8,8 +8,9 @@ gem 'jquery-rails'
 gem 'omniauth'
 gem "oa-oauth", :require => "omniauth/oauth"
 gem "cancan"
+gem 'devise_invitable','0.4.rc'
+gem 'heroku'
 
-#gem 'devise_invitable'
 #gem 'devise_rpx_connectable'
 #gem 'flutie'
 #gem 'paperclip'
