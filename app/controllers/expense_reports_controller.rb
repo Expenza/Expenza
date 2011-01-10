@@ -2,10 +2,10 @@ class ExpenseReportsController < ApplicationController
   # GET /expense_reports
   # GET /expense_reports.xml
   before_filter :authenticate_user!
-  load_and_authorize_resource #for cancan
+  #load_and_authorize_resource #for cancan
 
   def index
-    @expense_reports = ExpenseReport.all
+    @expense_reports = current_user.expense_reports
 
     respond_to do |format|
       format.html # index.html.erb
@@ -17,6 +17,7 @@ class ExpenseReportsController < ApplicationController
   # GET /expense_reports/1.xml
   def show
     @expense_report = ExpenseReport.find(params[:id])
+    enforce_view_permission(@expense_report)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -28,7 +29,8 @@ class ExpenseReportsController < ApplicationController
   # GET /expense_reports/new.xml
   def new
     @expense_report = ExpenseReport.new
-
+    @expense_report.user_ids = [current_user.id]
+    enforce_create_permission(@expense_report)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @expense_report }
@@ -38,12 +40,16 @@ class ExpenseReportsController < ApplicationController
   # GET /expense_reports/1/edit
   def edit
     @expense_report = ExpenseReport.find(params[:id])
+    enforce_update_permission(@expense_report)
   end
 
   # POST /expense_reports
   # POST /expense_reports.xml
   def create
     @expense_report = ExpenseReport.new(params[:expense_report])
+    @expense_report.user_ids = [current_user.id]
+    @expense_report.setup_companyadmin(current_user)
+    enforce_create_permission(@expense_report)
 
     respond_to do |format|
       if @expense_report.save
@@ -60,6 +66,7 @@ class ExpenseReportsController < ApplicationController
   # PUT /expense_reports/1.xml
   def update
     @expense_report = ExpenseReport.find(params[:id])
+    enforce_update_permission(@expense_report)
 
     respond_to do |format|
       if @expense_report.update_attributes(params[:expense_report])
@@ -76,6 +83,7 @@ class ExpenseReportsController < ApplicationController
   # DELETE /expense_reports/1.xml
   def destroy
     @expense_report = ExpenseReport.find(params[:id])
+    enforce_destroy_permission(@expense_report)
     @expense_report.destroy
 
     respond_to do |format|

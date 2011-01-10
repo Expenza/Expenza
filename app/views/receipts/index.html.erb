@@ -27,9 +27,7 @@
   </tr>
 <% end %>
 </table>
-<% if can? :manage, User %>
 <%= link_to 'Invite', new_user_invitation_path %>
-<% end %>
 <br />
 
 <%= link_to 'New Receipt', new_receipt_path %>

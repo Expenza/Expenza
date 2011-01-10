@@ -2,10 +2,10 @@ class ReceiptsController < ApplicationController
   # GET /receipts
   # GET /receipts.xml
   before_filter :authenticate_user!
-  load_and_authorize_resource #for cancan
+  #load_and_authorize_resource #for cancan
 
   def index
-    @receipts = Receipt.find_all_by_user_id current_user.id
+    @receipts = current_user.receipts
 
     respond_to do |format|
       format.html # index.html.erb
@@ -17,6 +17,7 @@ class ReceiptsController < ApplicationController
   # GET /receipts/1.xml
   def show
     @receipt = Receipt.find(params[:id])
+    enforce_view_permission(@receipt)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -27,7 +28,9 @@ class ReceiptsController < ApplicationController
   # GET /receipts/new
   # GET /receipts/new.xml
   def new
-    @receipt = Receipt.new(:user_id => current_user.id)
+    @receipt = Receipt.new
+    enforce_create_permission(@receipt)
+    @receipt.user = current_user    
 
     respond_to do |format|
       format.html # new.html.erb
@@ -38,12 +41,15 @@ class ReceiptsController < ApplicationController
   # GET /receipts/1/edit
   def edit
     @receipt = Receipt.find(params[:id])
+    enforce_update_permission(@receipt)
   end
 
   # POST /receipts
   # POST /receipts.xml
   def create
     @receipt = Receipt.new(params[:receipt])
+    enforce_create_permission(@receipt)
+    @receipt.user = current_user        
 
     respond_to do |format|
       if @receipt.save
@@ -60,6 +66,7 @@ class ReceiptsController < ApplicationController
   # PUT /receipts/1.xml
   def update
     @receipt = Receipt.find(params[:id])
+    enforce_update_permission(@receipt)
 
     respond_to do |format|
       if @receipt.update_attributes(params[:receipt])
@@ -76,6 +83,7 @@ class ReceiptsController < ApplicationController
   # DELETE /receipts/1.xml
   def destroy
     @receipt = Receipt.find(params[:id])
+    enforce_destroy_permission(@receipt)
     @receipt.destroy
 
     respond_to do |format|

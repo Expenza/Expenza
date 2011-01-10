@@ -10,16 +10,12 @@
 
   <% @companies.each do |company| %>
       <tr>
-        <% if can? :read, company %>
             <td><%= company.name %></td>
             <td><%= company.address %></td>
 
             <td><%= link_to 'Show', company %></td>
-        <% end %>
-        <% if can? :manage, company %>
             <td><%= link_to 'Edit', edit_company_path(company) %></td>
             <td><%= link_to 'Destroy', company, :confirm => 'Are you sure?', :method => :delete %></td>
-        <% end %>
       </tr>
   <% end %>
 </table>

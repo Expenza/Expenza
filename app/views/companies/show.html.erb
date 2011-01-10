@@ -1,5 +1,4 @@
 <p id="notice"><%= notice %></p>
-<% if can? :read, @company %>
 <p>
   <b>Name:</b>
   <%= @company.name %>
@@ -9,9 +8,6 @@
   <b>Address:</b>
   <%= @company.address %>
 </p>
-    <% end %>
 
-<% if can? :manage, @company %>
 <%= link_to 'Edit', edit_company_path(@company) %> |
-    <% end %>
 <%= link_to 'Back', companies_path %>

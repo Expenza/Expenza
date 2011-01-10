@@ -14,7 +14,7 @@
 
     <% for role in Role.find([2,3,4]) %>
         <div>
-          <%= check_box_tag "user[role_ids][]", role.id %>
+          <%= radio_button_tag "user[role_ids][]", role.id %>
           <%= role.name %>
         </div>
     <% end %>

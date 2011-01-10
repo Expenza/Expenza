@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.xml
   before_filter :authenticate_user!
-  load_and_authorize_resource #for cancan
+  #load_and_authorize_resource #for cancan
 
   def index
     @categories = Category.all

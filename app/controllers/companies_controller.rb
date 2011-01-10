@@ -2,10 +2,10 @@ class CompaniesController < ApplicationController
   # GET /companies
   # GET /companies.xml
   before_filter :authenticate_user!
-  load_and_authorize_resource #for cancan
+  #load_and_authorize_resource #for cancan
 
   def index
-      @companies = Company.all
+      @companies = current_user.companies
       respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @companies }
@@ -16,6 +16,7 @@ class CompaniesController < ApplicationController
   # GET /companies/1.xml
   def show
     @company = Company.find(params[:id])
+    enforce_view_permission(@company)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -27,6 +28,7 @@ class CompaniesController < ApplicationController
   # GET /companies/new.xml
   def new
     @company = Company.new
+    enforce_create_permission(@company)
 
     respond_to do |format|
       format.html # new.html.erb
@@ -37,12 +39,14 @@ class CompaniesController < ApplicationController
   # GET /companies/1/edit
   def edit
     @company = Company.find(params[:id])
+    enforce_update_permission(@company)
   end
 
   # POST /companies
   # POST /companies.xml
   def create
     @company = Company.new(params[:company])
+    enforce_create_permission(@company)
     @company.setup_user(current_user.id)
 
     respond_to do |format|
@@ -60,6 +64,7 @@ class CompaniesController < ApplicationController
   # PUT /companies/1.xml
   def update
     @company = Company.find(params[:id])
+    enforce_update_permission(@company)
 
     respond_to do |format|
       if @company.update_attributes(params[:company])
@@ -76,6 +81,7 @@ class CompaniesController < ApplicationController
   # DELETE /companies/1.xml
   def destroy
     @company = Company.find(params[:id])
+    enforce_destroy_permission(@company)
     @company.destroy
 
     respond_to do |format|

@@ -2,10 +2,10 @@ class ExpenseLinesController < ApplicationController
   # GET /expense_lines
   # GET /expense_lines.xml
   before_filter :authenticate_user!
-  load_and_authorize_resource #for cancan
+  #load_and_authorize_resource #for cancan
 
   def index
-    @expense_lines = ExpenseLine.all
+    @expense_lines = current_user.expense_lines
 
     respond_to do |format|
       format.html # index.html.erb
@@ -17,6 +17,7 @@ class ExpenseLinesController < ApplicationController
   # GET /expense_lines/1.xml
   def show
     @expense_line = ExpenseLine.find(params[:id])
+    enforce_view_permission(@expense_line)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -28,6 +29,8 @@ class ExpenseLinesController < ApplicationController
   # GET /expense_lines/new.xml
   def new
     @expense_line = ExpenseLine.new
+    enforce_create_permission(@expense_line)
+    @expense_line.user = current_user
 
     respond_to do |format|
       format.html # new.html.erb
@@ -38,12 +41,15 @@ class ExpenseLinesController < ApplicationController
   # GET /expense_lines/1/edit
   def edit
     @expense_line = ExpenseLine.find(params[:id])
+    enforce_update_permission(@expense_line)
   end
 
   # POST /expense_lines
   # POST /expense_lines.xml
   def create
     @expense_line = ExpenseLine.new(params[:expense_line])
+    enforce_create_permission(@expense_line)
+    @expense_line.user = current_user
 
     respond_to do |format|
       if @expense_line.save
@@ -60,6 +66,7 @@ class ExpenseLinesController < ApplicationController
   # PUT /expense_lines/1.xml
   def update
     @expense_line = ExpenseLine.find(params[:id])
+    enforce_update_permission(@expense_line)
 
     respond_to do |format|
       if @expense_line.update_attributes(params[:expense_line])
@@ -76,6 +83,7 @@ class ExpenseLinesController < ApplicationController
   # DELETE /expense_lines/1.xml
   def destroy
     @expense_line = ExpenseLine.find(params[:id])
+    enforce_destroy_permission(@expense_line)
     @expense_line.destroy
 
     respond_to do |format|
