@@ -617,16 +617,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="1076" selection-end="1076" vertical-scroll-proportion="0.0">
+        <state line="51" column="73" selection-start="1923" selection-end="1923" vertical-scroll-proportion="0.6120092">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1753" selection-end="1753" vertical-scroll-proportion="0.51501155">
+        <state line="30" column="0" selection-start="1173" selection-end="1173" vertical-scroll-proportion="0.17551963">
           <folding />
         </state>
       </provider>
