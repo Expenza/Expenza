@@ -12,5 +12,4 @@ class ApplicationController < ActionController::Base
     flash[:alert] = "Permission Denied. Please contact your company administrator for further details."
     redirect_to root_url
   end
-
 end

@@ -23,9 +23,16 @@ class User < ActiveRecord::Base
   end
 
   def setup_role
-    if self.role_ids.empty?
-      self.role_ids = [2]
+    if self.invited_by_id.nil?
+      if self.role_ids.empty?
+        self.role_ids = [2]
+      end
+    else
+      self.role_ids = [4]
+      invited_by = User.find_by_id self.invited_by_id
+      self.company_ids = invited_by.companies unless invited_by.companies.empty?
     end
+
   end
 
 
