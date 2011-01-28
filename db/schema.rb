@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110113052026) do
+ActiveRecord::Schema.define(:version => 20110124001912) do
 
   create_table "categories", :force => true do |t|
     t.string   "category_code"
@@ -32,6 +32,22 @@ ActiveRecord::Schema.define(:version => 20110113052026) do
     t.integer "company_id"
     t.integer "user_id"
   end
+
+  create_table "delayed_jobs", :force => true do |t|
+    t.integer  "priority",   :default => 0
+    t.integer  "attempts",   :default => 0
+    t.text     "handler"
+    t.text     "last_error"
+    t.datetime "run_at"
+    t.datetime "locked_at"
+    t.datetime "failed_at"
+    t.string   "locked_by"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "delayed_jobs", ["locked_by"], :name => "delayed_jobs_locked_by"
+  add_index "delayed_jobs", ["priority", "run_at"], :name => "delayed_jobs_priority"
 
   create_table "expense_lines", :force => true do |t|
     t.datetime "date"
@@ -68,7 +84,7 @@ ActiveRecord::Schema.define(:version => 20110113052026) do
 
   create_table "receipts", :force => true do |t|
     t.integer  "user_id"
-    t.integer  "content_category"
+    t.string   "content_category"
     t.binary   "contents"
     t.datetime "date"
     t.integer  "amount"
@@ -76,6 +92,7 @@ ActiveRecord::Schema.define(:version => 20110113052026) do
     t.string   "comment"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "content_text"
   end
 
   create_table "roles", :force => true do |t|

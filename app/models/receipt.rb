@@ -2,8 +2,7 @@ class Receipt < ActiveRecord::Base
   has_and_belongs_to_many :expense_lines
   belongs_to :user
   include Canable::Ables  # Trying canable
-
-  attr_accessible :user_id,:content_category,:contents,:date,:amount,:tags,:comment
+  attr_accessible :user_id,:content_category,:contents,:content_text,:date,:amount,:tags,:comment
 
   ##### For Canable #####
   def viewable_by?(user)
@@ -25,6 +24,15 @@ class Receipt < ActiveRecord::Base
   def destroyable_by?(user)
     updatable_by?(user)
   end
+
+  searchable do
+    text :content_text #, :default_boost => 2
+    integer :user_id, :references => User
+    date :date
+  end
+
+
+
 
 
 end

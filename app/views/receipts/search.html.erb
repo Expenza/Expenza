@@ -1,0 +1,19 @@
+<div class="container">
+  <% form_tag receipts_search_path, :method => 'get' do %>
+      <p>
+        <%= text_field_tag :q, params[:q] %>
+        <%= submit_tag "Search", :name => nil %>
+      </p>
+      <% if @search.nil? %>
+          <p> Please enter search term</p>
+          <% elsif @search.hits.empty? %>
+          <p> Search did not yield results</p>
+      <% else %>
+          <% @search.each_hit_with_result do |hit, post| %>
+              <h2>Receipt # <%= link_to(post.id, receipt_url(post)) %> </h2>
+              <h2>Found Text In: </h2>
+              <p><%= post.content_text %></p>
+          <% end %>
+      <% end %>
+  <% end %>
+</div>

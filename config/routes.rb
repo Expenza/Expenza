@@ -5,6 +5,7 @@ Expenza::Application.routes.draw do
 
   resources :categories
 
+  match 'receipts/search' => 'receipts#search'
   resources :receipts
 
   resources :expense_lines

@@ -38,5 +38,6 @@ config.action_mailer.smtp_settings = {
   :password             => 'R1twik.G',
   :authentication       => 'plain',
   :enable_starttls_auto => true  }
+
 end
 

@@ -1,3 +1,4 @@
+<div class="container">
 <h2>Sign up</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
@@ -13,13 +14,13 @@
       <%= f.password_field :password_confirmation %></p>
 
     <% for role in Role.find([2,3,4]) %>
-        <div>
           <%= radio_button_tag "user[role_ids][]", role.id %>
           <%= role.name %>
-        </div>
     <% end %>
 
     <p><%= f.submit "Sign up" %></p>
 <% end %>
+</div>
+
 
 <%= render :partial => "devise/shared/links" %>

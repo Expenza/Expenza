@@ -1,35 +1,42 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <b>User:</b>
-  <%= @receipt.user_id %>
-</p>
+  <p>
+    <b>User:</b>
+    <%= @receipt.user_id %>
+  </p>
 
-<p>
-  <b>Content category:</b>
-  <%= @receipt.content_category %>
-</p>
+  <p>
+    <b>Content category:</b>
+    <%= @receipt.content_category %>
+  </p>
 
-<p>
-  <b>Contents:</b>
-  <%= @receipt.contents %>
-</p>
+  <p>
+    <b>Contents:</b>
+    <%= @receipt.contents %>
+  </p>
 
-<p>
-  <b>Date:</b>
-  <%= @receipt.date %>
-</p>
+  <p>
+    <b>Content Text:</b>
+    <%= @receipt.content_text %>
+  </p>
 
-<p>
-  <b>Amount:</b>
-  <%= @receipt.amount %>
-</p>
+  <p>
+    <b>Date:</b>
+    <%= @receipt.date.to_s %>
+  </p>
 
-<p>
-  <b>Comments:</b>
-  <%= @receipt.comment %>
-</p>
+  <p>
+    <b>Amount:</b>
+    <%= @receipt.amount %>
+  </p>
+
+  <p>
+    <b>Comments:</b>
+    <%= @receipt.comment %>
+  </p>
 
 
-<%= link_to 'Edit', edit_receipt_path(@receipt) %> |
-<%= link_to 'Back', receipts_path %>
+  <%= link_to 'Edit', edit_receipt_path(@receipt) %> |
+  <%= link_to 'Back', receipts_path %>
+</div>

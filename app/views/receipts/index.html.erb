@@ -1,33 +1,37 @@
-<h1>Listing receipts</h1>
+<div class="container">
+      <h1>Listing receipts</h1>
+      <table>
+        <tr>
+          <th>User</th>
+          <th>Content category</th>
+          <th>Contents</th>
+          <th>Content Text</th>
+          <th>Date</th>
+          <th>Amount</th>
+          <th>Comments</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
 
-<table>
-  <tr>
-    <th>User</th>
-    <th>Content category</th>
-    <th>Contents</th>
-    <th>Date</th>
-    <th>Amount</th>
-    <th>Comments</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @receipts.each do |receipt| %>
-  <tr>
-    <td><%= receipt.user_id %></td>
-    <td><%= receipt.content_category %></td>
-    <td><%= receipt.contents %></td>
-    <td><%= receipt.date %></td>
-    <td><%= receipt.amount %></td>
-    <td><%= receipt.comment %></td>
-    <td><%= link_to 'Show', receipt %></td>
-    <td><%= link_to 'Edit', edit_receipt_path(receipt) %></td>
-    <td><%= link_to 'Destroy', receipt, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-<%= link_to 'Invite', new_user_invitation_path %>
-<br />
-
-<%= link_to 'New Receipt', new_receipt_path %>
+        <% @receipts.each do |receipt| %>
+            <tr>
+              <td><%= receipt.user_id %></td>
+              <td><%= receipt.content_category %></td>
+              <td><%= receipt.contents %></td>
+              <td><%= receipt.content_text %></td>
+              <td><%= receipt.date %></td>
+              <td><%= receipt.amount %></td>
+              <td><%= receipt.comment %></td>
+              <td><%= link_to 'Show', receipt %></td>
+              <td><%= link_to 'Edit', edit_receipt_path(receipt) %></td>
+              <td><%= link_to 'Destroy', receipt, :confirm => 'Are you sure?', :method => :delete %></td>
+            </tr>
+        <% end %>
+      </table>
+  <div>
+  <%= link_to 'New Receipt', new_receipt_path %> |
+  <%= link_to('Search Receipts', receipts_search_url) %> |
+  <%= link_to 'Invite', new_user_invitation_path %> 
+  </div>
+</div>

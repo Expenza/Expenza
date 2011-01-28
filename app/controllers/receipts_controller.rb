@@ -4,12 +4,27 @@ class ReceiptsController < ApplicationController
   before_filter :authenticate_user!
   #load_and_authorize_resource #for cancan
 
+  def search
+    if params[:q].blank?
+
+    else
+      @search = Receipt.search do
+        keywords params[:q]
+        with(:user_id).all_of [current_user.id]
+      end
+    end
+
+  end
+
   def index
+
     @receipts = current_user.receipts
+
+    #@receipts = current_user.receipts
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @receipts }
+      format.xml { render :xml => @receipts }
     end
   end
 
@@ -21,7 +36,7 @@ class ReceiptsController < ApplicationController
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @receipt }
+      format.xml { render :xml => @receipt }
     end
   end
 
@@ -30,11 +45,11 @@ class ReceiptsController < ApplicationController
   def new
     @receipt = Receipt.new
     enforce_create_permission(@receipt)
-    @receipt.user = current_user    
+    @receipt.user = current_user
 
     respond_to do |format|
       format.html # new.html.erb
-      format.xml  { render :xml => @receipt }
+      format.xml { render :xml => @receipt }
     end
   end
 
@@ -49,15 +64,17 @@ class ReceiptsController < ApplicationController
   def create
     @receipt = Receipt.new(params[:receipt])
     enforce_create_permission(@receipt)
-    @receipt.user = current_user        
+    @receipt.user = current_user
+    @receipt.date = DateTime.strptime(params[:receipt][:date],'%m/%d/%Y').to_time
+    logger.debug params[:receipt].inspect
 
     respond_to do |format|
       if @receipt.save
         format.html { redirect_to(@receipt, :notice => 'Receipt was successfully created.') }
-        format.xml  { render :xml => @receipt, :status => :created, :location => @receipt }
+        format.xml { render :xml => @receipt, :status => :created, :location => @receipt }
       else
         format.html { render :action => "new" }
-        format.xml  { render :xml => @receipt.errors, :status => :unprocessable_entity }
+        format.xml { render :xml => @receipt.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -67,14 +84,14 @@ class ReceiptsController < ApplicationController
   def update
     @receipt = Receipt.find(params[:id])
     enforce_update_permission(@receipt)
-
+    params[:receipt][:date] = DateTime.strptime(params[:receipt][:date],'%m/%d/%Y').to_time
     respond_to do |format|
       if @receipt.update_attributes(params[:receipt])
         format.html { redirect_to(@receipt, :notice => 'Receipt was successfully updated.') }
-        format.xml  { head :ok }
+        format.xml { head :ok }
       else
         format.html { render :action => "edit" }
-        format.xml  { render :xml => @receipt.errors, :status => :unprocessable_entity }
+        format.xml { render :xml => @receipt.errors, :status => :unprocessable_entity }
       end
     end
   end
@@ -88,7 +105,7 @@ class ReceiptsController < ApplicationController
 
     respond_to do |format|
       format.html { redirect_to(receipts_url) }
-      format.xml  { head :ok }
+      format.xml { head :ok }
     end
   end
 end

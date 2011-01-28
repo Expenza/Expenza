@@ -12,14 +12,149 @@
   <component name="GemRequirementsHolder" version="3">
     <requirement>
       <requirement>
-        <dependency name="aws-s3" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="abstract" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="actionmailer" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="actionpack" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="activemodel" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="activerecord" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="activerecord-jdbc-adapter" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="activerecord-jdbcpostgresql-adapter" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
       <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="activeresource" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="activesupport" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="addressable" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="arel" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="bcrypt-ruby" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="bouncy-castle-java" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="builder" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="bundler" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
         <dependency name="canable" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
+      <source manual="true" />
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="capybara" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="celerity" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="childprocess" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="columnize" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="configuration" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="culerity" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="daemons" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="delayed_job" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
       <source from="Gemfile" />
     </requirement>
     <requirement>
@@ -48,15 +183,151 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="erubis" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="escape" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="exifr" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="faraday" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="ffi" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="heroku" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
+      <source manual="true" />
       <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="i18n" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="jdbc-postgres" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
         <dependency name="jquery-rails" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
+      <source manual="true" />
       <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="jruby-launcher" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="jruby-openssl" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="json_pure" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="launchy" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="mail" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="mime-types" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="mms2r" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="mocha" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="multi_json" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="multipart-post" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="net-ldap" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="nokogiri" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="oa-basic" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="oa-core" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="oa-enterprise" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
@@ -66,15 +337,82 @@
     </requirement>
     <requirement>
       <requirement>
+        <dependency name="oa-oauth" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="oa-openid" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="oauth" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="oauth2" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
         <dependency name="omniauth" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
+      <source manual="true" />
       <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
-        <dependency name="pg" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+        <dependency name="orm_adapter" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
-      <source from="Gemfile" />
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="polyglot" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="pr_geohash" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="pyu-ruby-sasl" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rack" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rack-mount" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rack-openid" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rack-test" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
     </requirement>
     <requirement>
       <requirement>
@@ -88,6 +426,150 @@
       </requirement>
       <source manual="true" />
     </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="railties" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rake" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rest-client" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rsolr" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rspec" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="ruby-debug" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="ruby-debug-base" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="ruby-openid" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="ruby-openid-apps-discovery" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rubyntlm" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rubyzip" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="rufus-scheduler" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="selenium-webdriver" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="sources" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="sunspot" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="sunspot_rails" version="1.2.rc4" bound="EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="sunspot_rails" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="thor" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="treetop" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="tzinfo" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="uuidtools" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="warden" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="weakling" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="xpath" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source manual="true" />
+    </requirement>
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
@@ -97,64 +579,96 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] oa-enterprise (v0.1.6, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/oa-enterprise-0.1.6)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] railties (v3.0.3, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/railties-3.0.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] oa-openid (v0.1.6, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/oa-openid-0.1.6)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] aws-s3 (v0.6.2, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/aws-s3-0.6.2)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] oauth (v0.4.4, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/oauth-0.4.4)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.0.3, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/activesupport-3.0.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord (v3.0.3, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/activerecord-3.0.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] omniauth (v0.1.6, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/omniauth-0.1.6)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] oa-core (v0.1.6, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/oa-core-0.1.6)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] bcrypt-ruby (v2.1.2, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/bcrypt-ruby-2.1.2)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v3.0.3, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/activeresource-3.0.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] xml-simple (v1.0.12, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/xml-simple-1.0.12)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] oa-basic (v0.1.6, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/oa-basic-0.1.6)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] devise (v1.2.rc, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/devise-1.2.rc)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] oauth2 (v0.1.0, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/oauth2-0.1.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] warden (v1.0.3, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/warden-1.0.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.7, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/bundler-1.0.7)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] actionmailer (v3.0.3, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/actionmailer-3.0.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.4, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/nokogiri-1.4.4)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] oa-oauth (v0.1.6, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/oa-oauth-0.1.6)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.16, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/mime-types-1.16)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/builder-2.1.2)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v3.0.3, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/actionpack-3.0.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rails (v3.0.3, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/rails-3.0.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] multi_json (v0.0.5, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/multi_json-0.0.5)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] jquery-rails (v0.2.4, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/jquery-rails-0.2.4)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] pg (v0.10.0, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/pg-0.10.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] orm_adapter (v0.0.3, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/orm_adapter-0.0.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rest-client (v1.6.1, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/rest-client-1.6.1)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] devise_invitable (v0.4.rc, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/devise_invitable-0.4.rc)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] heroku (v1.16.2, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/heroku-1.16.2)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] json_pure (v1.4.6, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/json_pure-1.4.6)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] launchy (v0.3.7, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/launchy-0.3.7)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] canable (v0.1.1, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/canable-0.1.1)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.8.7, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136@global/gems/rake-0.8.7)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] pyu-ruby-sasl (v0.0.3.2, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/pyu-ruby-sasl-0.0.3.2)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.1, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/polyglot-0.3.1)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] ruby-openid-apps-discovery (v1.2.0, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/ruby-openid-apps-discovery-1.2.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] multipart-post (v1.0.1, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/multipart-post-1.0.1)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.23, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/tzinfo-0.3.23)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] configuration (v1.2.0, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/configuration-1.2.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.9, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/treetop-1.4.9)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] faraday (v0.5.3, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/faraday-0.5.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v2.0.6, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/arel-2.0.6)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-openid (v1.2.0, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/rack-openid-1.2.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] i18n (v0.5.0, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/i18n-0.5.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] abstract (v1.0.0, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/abstract-1.0.0)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] net-ldap (v0.1.1, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/net-ldap-0.1.1)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] addressable (v2.2.2, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/addressable-2.2.2)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] ruby-openid (v2.1.8, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/ruby-openid-2.1.8)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] erubis (v2.6.6, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/erubis-2.6.6)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-mount (v0.6.13, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/rack-mount-0.6.13)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.2.1, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/rack-1.2.1)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] thor (v0.14.6, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/thor-0.14.6)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.0.3, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/activemodel-3.0.3)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rubyntlm (v0.1.1, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/rubyntlm-0.1.1)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.5.6, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/rack-test-0.5.6)" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.2.13, /Users/gaurav/.rvm/gems/ruby-1.9.2-p136/gems/mail-2.2.13)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] railties (v3.0.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/railties-3.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activesupport (v3.0.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/activesupport-3.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord (v3.0.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/activerecord-3.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activeresource (v3.0.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/activeresource-3.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionmailer (v3.0.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/actionmailer-3.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mime-types (v1.16, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/mime-types-1.16)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] builder (v2.1.2, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/builder-2.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] actionpack (v3.0.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/actionpack-3.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rails (v3.0.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/rails-3.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rake (v0.8.7, /Users/gaurav/.rvm/gems/jruby-1.5.6@global/gems/rake-0.8.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] polyglot (v0.3.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/polyglot-0.3.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] treetop (v1.4.9, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/treetop-1.4.9)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] i18n (v0.5.0, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/i18n-0.5.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] abstract (v1.0.0, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/abstract-1.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] erubis (v2.6.6, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/erubis-2.6.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-mount (v0.6.13, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/rack-mount-0.6.13)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack (v1.2.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/rack-1.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] thor (v0.14.6, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/thor-0.14.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activemodel (v3.0.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/activemodel-3.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord-jdbc-adapter (v1.1.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/activerecord-jdbc-adapter-1.1.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] activerecord-jdbcpostgresql-adapter (v1.1.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/activerecord-jdbcpostgresql-adapter-1.1.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] arel (v2.0.7, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/arel-2.0.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bcrypt-ruby (v2.1.4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/bcrypt-ruby-2.1.4-java)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bouncy-castle-java (v1.5.0145.2, /Users/gaurav/.rvm/gems/jruby-1.5.6@global/gems/bouncy-castle-java-1.5.0145.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] bundler (v1.0.9, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/bundler-1.0.9)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] capybara (v0.4.0, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/capybara-0.4.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] celerity (v0.8.2, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/celerity-0.8.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] childprocess (v0.1.6, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/childprocess-0.1.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] columnize (v0.3.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/columnize-0.3.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] culerity (v0.2.12, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/culerity-0.2.12)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ffi (v0.6.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/ffi-0.6.3-java)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] jdbc-postgres (v9.0.801, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/jdbc-postgres-9.0.801)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] jruby-launcher (v1.0.5, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/jruby-launcher-1.0.5-java)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mail (v2.2.15, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/mail-2.2.15)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mocha (v0.9.9, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/mocha-0.9.9)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-test (v0.5.7, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/rack-test-0.5.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rspec (v1.3.0, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/rspec-1.3.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ruby-debug (v0.10.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/ruby-debug-0.10.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ruby-debug-base (v0.10.3.2, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/ruby-debug-base-0.10.3.2-java)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rubyzip (v0.9.4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/rubyzip-0.9.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] selenium-webdriver (v0.0.29, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/selenium-webdriver-0.0.29)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sources (v0.0.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/sources-0.0.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] tzinfo (v0.3.24, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/tzinfo-0.3.24)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] weakling (v0.0.4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/weakling-0.0.4-java)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] xpath (v0.1.2, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/xpath-0.1.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sunspot (v1.2.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/sunspot-1.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ruby-openid (v2.1.8, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/ruby-openid-2.1.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] faraday (v0.5.4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/faraday-0.5.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] oa-enterprise (v0.1.6, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/oa-enterprise-0.1.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] ruby-openid-apps-discovery (v1.2.0, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/ruby-openid-apps-discovery-1.2.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] configuration (v1.2.0, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/configuration-1.2.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] canable (v0.1.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/canable-0.1.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rest-client (v1.6.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/rest-client-1.6.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] oa-core (v0.1.6, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/oa-core-0.1.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] mms2r (v3.3.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/mms2r-3.3.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] addressable (v2.2.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/addressable-2.2.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] delayed_job (v2.1.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/delayed_job-2.1.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] devise (v1.2.rc, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/devise-1.2.rc)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] uuidtools (v2.1.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/uuidtools-2.1.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] nokogiri (v1.4.4.2, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/nokogiri-1.4.4.2-java)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] oa-openid (v0.1.6, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/oa-openid-0.1.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] orm_adapter (v0.0.4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/orm_adapter-0.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] multi_json (v0.0.5, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/multi_json-0.0.5)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] warden (v1.0.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/warden-1.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] net-ldap (v0.1.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/net-ldap-0.1.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] multipart-post (v1.1.0, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/multipart-post-1.1.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] json_pure (v1.4.6, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/json_pure-1.4.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] launchy (v0.3.7, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/launchy-0.3.7)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sunspot_rails (v1.2.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/sunspot_rails-1.2.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] omniauth (v0.1.6, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/omniauth-0.1.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] oauth (v0.4.4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/oauth-0.4.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] oa-basic (v0.1.6, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/oa-basic-0.1.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] oauth2 (v0.1.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/oauth2-0.1.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rack-openid (v1.2.0, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/rack-openid-1.2.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rubyntlm (v0.1.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/rubyntlm-0.1.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] escape (v0.0.4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/escape-0.0.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] pyu-ruby-sasl (v0.0.3.2, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/pyu-ruby-sasl-0.0.3.2)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] devise_invitable (v0.4.rc, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/devise_invitable-0.4.rc)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] heroku (v1.17.10, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/heroku-1.17.10)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] json (v1.4.6, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/json-1.4.6-java)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] exifr (v1.0.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/exifr-1.0.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] jquery-rails (v0.2.6, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/jquery-rails-0.2.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] daemons (v1.1.0, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/daemons-1.1.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] oa-oauth (v0.1.6, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/oa-oauth-0.1.6)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sunspot_rails (v1.2.rc4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/sunspot_rails-1.2.rc4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rufus-scheduler (v2.0.8, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/rufus-scheduler-2.0.8)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] rsolr (v0.12.1, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/rsolr-0.12.1)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] sunspot (v1.2.rc4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/sunspot-1.2.rc4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] pr_geohash (v1.0.0, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/pr_geohash-1.0.0)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] jruby-openssl (v0.7.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/jruby-openssl-0.7.3)" level="application" />
   </component>
 </module>
 
