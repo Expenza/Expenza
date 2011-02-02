@@ -125,6 +125,13 @@ GEM
     orm_adapter (0.0.4)
     polyglot (0.3.1)
     pr_geohash (1.0.0)
+    prawn (0.8.4)
+      prawn-core (>= 0.8.4, < 0.9)
+      prawn-layout (>= 0.8.4, < 0.9)
+      prawn-security (>= 0.8.4, < 0.9)
+    prawn-core (0.8.4)
+    prawn-layout (0.8.4)
+    prawn-security (0.8.4)
     pyu-ruby-sasl (0.0.3.2)
     rack (1.2.1)
     rack-mount (0.6.13)
@@ -188,6 +195,7 @@ DEPENDENCIES
   mms2r
   oa-oauth
   omniauth
+  prawn
   rails (= 3.0.3)
   rufus-scheduler
   sunspot_rails (= 1.2.rc4)

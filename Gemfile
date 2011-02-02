@@ -3,6 +3,8 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.3'
 
 #gem 'pg'
+gem 'mail'
+gem 'prawn'
 gem 'jruby-openssl'
 gem 'activerecord-jdbcpostgresql-adapter'
 gem  'devise','1.2.rc'

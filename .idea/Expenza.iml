@@ -267,6 +267,7 @@
         <dependency name="mail" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source manual="true" />
+      <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
@@ -383,6 +384,12 @@
         <dependency name="pr_geohash" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
       </requirement>
       <source manual="true" />
+    </requirement>
+    <requirement>
+      <requirement>
+        <dependency name="prawn" version="0" bound="GREATER_OR_EQUAL" git="false" path="false" doRequire="true" />
+      </requirement>
+      <source from="Gemfile" />
     </requirement>
     <requirement>
       <requirement>
@@ -669,6 +676,10 @@
     <orderEntry type="library" scope="PROVIDED" name="[gem] sunspot (v1.2.rc4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/sunspot-1.2.rc4)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] pr_geohash (v1.0.0, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/pr_geohash-1.0.0)" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="[gem] jruby-openssl (v0.7.3, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/jruby-openssl-0.7.3)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] prawn-security (v0.8.4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/prawn-security-0.8.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] prawn-layout (v0.8.4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/prawn-layout-0.8.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] prawn-core (v0.8.4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/prawn-core-0.8.4)" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="[gem] prawn (v0.8.4, /Users/gaurav/.rvm/gems/jruby-1.5.6/gems/prawn-0.8.4)" level="application" />
   </component>
 </module>
 

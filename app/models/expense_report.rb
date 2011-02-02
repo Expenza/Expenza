@@ -34,4 +34,14 @@ class ExpenseReport < ActiveRecord::Base
     (updatable_by?(user)) #&& (user.roles.include?(user_role))
   end
 
+  class << self; attr_accessor :constraint_column end
+    @constraint_column = "user_ids"
+
+    searchable do
+      text :name
+      text :tags
+      text :comment
+      integer :user_ids, :multiple => true  #, :references => User
+    end
+
 end

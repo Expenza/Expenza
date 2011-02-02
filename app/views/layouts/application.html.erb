@@ -15,8 +15,16 @@
 <div class="container">
    <div class="user_nav">
       <% if user_signed_in? %>
+         <p><%= link_to 'Invite Someone', new_user_invitation_path %> |
           Signed in as <%= current_user.email %>. Not You?
-          <%= link_to "Sign Out", destroy_user_session_path %>
+          <%= link_to "Sign Out", destroy_user_session_path %></p>
+         <%= form_tag searches_path, :method => 'post' do %>
+               <p>
+                 <%= text_field_tag :keyword, params[:keyword] %>
+                 <%= hidden_field_tag :onclass, self.controller_name %>
+                 <%= submit_tag "Search", :name => "commit", :type => "submit", :value => "Search" %>
+               </p>
+             <% end unless self.controller_name.eql?("searches")%>
       <% else %>
           <%= link_to "Sign Up", new_user_registration_path %> or <%= link_to "Sign In", new_user_session_path %>
          Or Use <%= link_to 'GMail', user_omniauth_authorize_path(:google_apps) %> to Login.

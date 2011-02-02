@@ -4,22 +4,18 @@ class ReceiptsController < ApplicationController
   before_filter :authenticate_user!
   #load_and_authorize_resource #for cancan
 
-  def search
-    if params[:q].blank?
-
-    else
-      @search = Receipt.search do
-        keywords params[:q]
-        with(:user_id).all_of [current_user.id]
-      end
-    end
-
-  end
+ # def search
+  #  if params[:q].blank?
+   # else
+    #  @search = Receipt.search do
+     #   keywords params[:q]
+      #  with(:user_id).all_of [current_user.id]
+     # end
+    #end
+  #end
 
   def index
-
     @receipts = current_user.receipts
-
     #@receipts = current_user.receipts
 
     respond_to do |format|

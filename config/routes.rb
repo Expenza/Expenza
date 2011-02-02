@@ -1,11 +1,13 @@
 Expenza::Application.routes.draw do
+  resources :searches , :only => [:new, :show, :create]
+
   devise_for :users
 
   resources :expense_reports
 
   resources :categories
 
-  match 'receipts/search' => 'receipts#search'
+  # match 'receipts/search' => 'receipts#search'
   resources :receipts
 
   resources :expense_lines

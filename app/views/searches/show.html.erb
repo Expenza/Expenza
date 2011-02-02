@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+ <% if @res.nil? %>
+          <p> Please enter search term</p>
+          <% elsif @res.hits.empty? %>
+          <p> Search did not yield results</p>
+      <% else %>
+          <% @res.each_hit_with_result do |hit, post| %>
+              <h2><%="#{@classid.humanize}: " %><%= link_to(post.id, url_for(post)) %> </h2>
+              <h2>Found Text In: </h2>
+              <p><%= post.inspect %></p>
+          <% end %>
+      <% end %>
+
+<%= link_to 'Back', new_search_path %>

@@ -28,4 +28,16 @@ class ExpenseLine < ActiveRecord::Base
     updatable_by?(user)
   end
 
+  #for search
+  class << self; attr_accessor :constraint_column end
+  @constraint_column = "user_id"
+
+  searchable do
+    text :merchant #, :default_boost => 2
+    text :tags
+    text :comment
+    integer :user_id, :references => User
+    date :date
+  end
+    
 end
