@@ -219,6 +219,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Expenza" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Expenza" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -626,13 +640,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/receipts/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="48" selection-start="1088" selection-end="1088" vertical-scroll-proportion="0.44148937">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/receipts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="10" selection-start="264" selection-end="264" vertical-scroll-proportion="0.5210918">
@@ -727,6 +734,13 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/expense_reports_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="0" selection-start="1454" selection-end="1454" vertical-scroll-proportion="0.3325062">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="9" selection-start="423" selection-end="423" vertical-scroll-proportion="0.72952855">
           <folding />
         </state>
       </provider>
