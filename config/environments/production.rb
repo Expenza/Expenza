@@ -57,7 +57,7 @@ config.action_mailer.smtp_settings = {
   :port                 => 587,
   :domain               => 'expenza.heroku.com',
   :user_name            => 'expenza.inc',
-  :password             => 'R1twik.G',
+  :password             => '',
   :authentication       => 'plain',
   :enable_starttls_auto => true  }
 end
